@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @JSchuerz
+- 👋 Hi, I’m @JSchuerz (PhD in Technical Mathematics)
 - 👀 I’m interested in ML / AI
 - 🌱 I’m currently learning everything concerning the above
 - 💞️ I’m looking to collaborate on Open Source ML Libraries
