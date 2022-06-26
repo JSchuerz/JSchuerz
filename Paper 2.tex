@@ -13,7 +13,7 @@
 \usepackage[english]{babel}
 
 
-\usepackage{natbib}
+%\usepackage{natbib}
 \usepackage{graphicx}
 \usepackage{latexsym}
 \usepackage{amsmath,amssymb,amsthm}
@@ -98,7 +98,7 @@ $$\text{cof}(\mathcal{SN}):= \min \{\vert \mathcal{F} \vert \colon \mathcal{F} \
 
 In \cite{Yorioka}, Yorioka introduced the so-called Yorioka ideals approximating the ideal of strong measure zero sets on $2^\omega$. We will generalize this notion to $\kappa$ and use it to investigate $\text{cof}(\mathcal{SN})$. Eventually, we shall show that $\text{cof}(\mathcal{SN}) < \mathfrak{c}_\kappa$, $\text{cof}(\mathcal{SN}) = \mathfrak{c}_\kappa$ as well as $\text{cof}(\mathcal{SN}) > \mathfrak{c}_\kappa$ are all consistent relative to ZFC.\\
 \\
-In the last chapter we first generalize the Galvin–Mycielski–Solovay Theorem (see \cite{Judah}) to $\kappa$ inaccessible. This result was originally proven by Wohofsky (see \cite{Wohofsky}). Then we follow Pawlikowski \cite{Pawlikowski} and show the relative consistency of $\text{cov}(\mathcal{SN}) < \text{add}(\mathcal{M}_\kappa)$ for $\kappa$ strongly unfoldable (see Definition \ref{D3}).\\
+In the last chapter we first generalize the Galvin–Mycielski–Solovay theorem (see \cite{Judah}) to $\kappa$ inaccessible. This result was originally proven by Wohofsky (see \cite{Wohofsky}). Then we follow Pawlikowski \cite{Pawlikowski} and show the relative consistency of $\text{cov}(\mathcal{SN}) < \text{add}(\mathcal{M}_\kappa)$ for $\kappa$ strongly unfoldable (see Definition \ref{D3}).\\
 \\
 Strong measure zero sets for $\kappa$ regular uncountable have also been studied in \cite{Halko} and \cite{Halko2}. More questions have been stated in \cite{Questions}.\\
 \\
@@ -157,7 +157,7 @@ The last statement can be deduced as follows: Given $k < \kappa$ choose $l \geq 
 
 \begin{figure}[h]
  \centering
- \includegraphics[scale=0.9]{Paper2}
+ \includegraphics[scale=0.9]{Paper2B.jpg}
  \caption{Definition of $\tau$}
  \label{Figure 1}
 \end{figure}
@@ -173,7 +173,7 @@ The following fact is straightforward:
 $\mathcal{SN} = \bigcap_{f \in \kappa^\kappa} \mathcal{I}(f)$.
 \end{fact}
 
-The next Lemma implicitly shows that comeager sets cannot be strong measure zero:
+The next lemma implicitly shows that comeager sets cannot be strong measure zero:
 
 \begin{lemma} \label{L1}
 Let $A \subseteq 2^\kappa$ be comeager. Then there exists $f \in \kappa^\kappa$ such that for every $f$-small set $B$ the set $A\setminus  B $ is non-empty.
@@ -372,7 +372,7 @@ We call a forcing notion $\mathcal{P}$ $\kappa$-$\text{centered}_{<\kappa}$ iff 
 \end{itemize}
 \end{definition}
 
-The following Lemma should be a straightforward consequence of Lemma \ref{L4}:
+The following lemma should be a straightforward consequence of Lemma \ref{L4}:
 
 \begin{lemma}
 $\mathbb{P}_\lambda$ satisfies the $\kappa^+$-c.c. Furthermore, if $\vert 2^\kappa\vert <\lambda$ and $\lambda^\kappa= \lambda$ or $\vert2^\kappa\vert \geq \lambda$, then there exists a dense set $D \subseteq \mathbb{P}_\lambda$ of size $\max(\vert2^\kappa \vert,\lambda)$.
@@ -384,7 +384,7 @@ is dense in $\mathbb{P}_\lambda$. Let $A\subset D$ be of size $\kappa^+$ and use
 Show by induction over $\epsilon < \gamma$ that $\vert D \cap \mathbb{P}_\epsilon\vert \leq \max(\vert 2^\kappa \vert,\lambda)$ by using the $\kappa^+$-c.c. of $\mathbb{P}_\epsilon$ and the fact that every $\mathbb{P}_\epsilon$-name for an element of $\kappa^\kappa$ is completely determined by a family of maximal antichains of size $\kappa$.
 \end{proof}
 
-We are ready to state and prove the following Theorem:
+We are ready to state and prove the following theorem:
 
 \begin{theorem}
 Let $\lambda > \kappa$ be regular. Let $V \vDash \vert 2^\kappa\vert \geq \lambda \,\, \text{or} \,\, \vert2^\kappa\vert < \lambda \land \lambda^\kappa=\lambda$. Then in $V^{\mathbb{P}_\lambda}$ the following holds: $\text{add}(\mathcal{M}_\kappa)=\mathfrak{d}_\kappa= \lambda$ and there exists a dominating family $\{f_\alpha \in \kappa^\kappa \colon \alpha < \lambda\}$ such that $\text{add}(\mathcal{I}(f_\alpha))=\text{cof}(\mathcal{I}(f_\alpha)) =\lambda$. Therefore $\text{cof}(\mathcal{SN})=\mathfrak{d}_{\mathfrak{d}_\kappa}= \mathfrak{d}_\lambda$.\\
@@ -392,7 +392,7 @@ Furthermore, $\vert 2^\kappa\vert =\max(\vert 2^\kappa \cap V \vert, \lambda)$, 
 \end{theorem}
 
 \begin{proof}
-Using the $\kappa^+$-c.c., the following should be straightforward: The $\kappa$-Hechler reals $(\dot{d}_\epsilon)_{\epsilon < \lambda}$ form a $\kappa$-scale, so $\mathfrak{d}_\kappa=\mathfrak{b}_\kappa=\lambda$. A ${<}\kappa$-support iteration adds cofinally many Cohen reals, therefore also $\text{cov}(\mathcal{M}_\kappa)=\lambda$, and since $\text{add}(\mathcal{M}_\kappa)= \min( \mathfrak{b}_\kappa, \text{cov}(\mathcal{M}_\kappa)$ by \citep{Baumhauer}, it follows that $\text{add}(\mathcal{M}_\kappa)=\mathfrak{d}_\kappa= \lambda$. The family $(\dot{\tau}_{\epsilon'})_{ \epsilon' \in B^{\lambda \, ^{-1}} (\{\epsilon\} \times \lambda)}$ witnesses $\text{add}(\mathcal{I}(\dot{d}_\epsilon))=\text{cof}(\mathcal{I}(\dot{d}_\epsilon)) =\lambda$, since $\mathcal{I}(\dot{d}_\epsilon))$ is a $\kappa$-Borel ideal. Hence $\text{cof}(\mathcal{SN})=\mathfrak{d}_{\mathfrak{d}_\kappa}$ by Theorem \ref{T2}.\\
+Using the $\kappa^+$-c.c., the following should be straightforward: The $\kappa$-Hechler reals $(\dot{d}_\epsilon)_{\epsilon < \lambda}$ form a $\kappa$-scale, so $\mathfrak{d}_\kappa=\mathfrak{b}_\kappa=\lambda$. A ${<}\kappa$-support iteration adds cofinally many Cohen reals, therefore also $\text{cov}(\mathcal{M}_\kappa)=\lambda$, and since $\text{add}(\mathcal{M}_\kappa)= \min( \mathfrak{b}_\kappa, \text{cov}(\mathcal{M}_\kappa)$ by \cite{Baumhauer}, it follows that $\text{add}(\mathcal{M}_\kappa)=\mathfrak{d}_\kappa= \lambda$. The family $(\dot{\tau}_{\epsilon'})_{ \epsilon' \in B^{\lambda \, ^{-1}} (\{\epsilon\} \times \lambda)}$ witnesses $\text{add}(\mathcal{I}(\dot{d}_\epsilon))=\text{cof}(\mathcal{I}(\dot{d}_\epsilon)) =\lambda$, since $\mathcal{I}(\dot{d}_\epsilon))$ is a $\kappa$-Borel ideal. Hence $\text{cof}(\mathcal{SN})=\mathfrak{d}_{\mathfrak{d}_\kappa}$ by Theorem \ref{T2}.\\
 Since $\mathbb{P}_\lambda$ has a dense subset $D$ of size $\max(\vert 2^\kappa \cap V \vert, \lambda)$, it satisfies the $\kappa^+$-c.c. and $\lambda^\kappa=\lambda$, it follows that $\vert 2^\kappa\vert \leq \vert\max(\vert 2^\kappa \cap V \vert, \lambda)$. Again using the $\kappa^+$-c.c., it follows that $\mathbb{P}_\lambda$ is $\lambda^\lambda$-bounding, hence $\mathfrak{d}_\lambda=\mathfrak{d}_\lambda^V$. Using $\text{add}(\mathcal{I}(\dot{d}_\epsilon))=\lambda$ for all $\epsilon< \lambda$, we can deduce $\lambda \leq \text{add}(\mathcal{SN})$. For $\text{cov}(\mathcal{SN}) \leq \lambda$ we note that $2^\kappa \cap V^{\mathbb{P}_\epsilon} \in \mathcal{SN}$ for all $\epsilon<\lambda$ as being witnessed by $(\dot{\tau}_{\epsilon'})_{\epsilon'> \epsilon}$. For $\text{non}(\mathcal{SN}) \leq \lambda$ we pick for every $\dot{\tau}_\epsilon$ possibly not distinct $x_\epsilon$'s such that $x_\epsilon \in 2^\kappa \setminus Y(\dot{\tau}_\epsilon)$ and set $X:=\{x_\epsilon \colon \epsilon< \lambda\}$. It follows that $\vert X \vert \leq \lambda$ and $X \notin \mathcal{SN}$, since no $\dot{\tau}_\epsilon$ can cover $X$.
 \end{proof}
 
@@ -407,7 +407,7 @@ $\mathfrak{c}_\kappa < \text{cof}(\mathcal{SN})$ holds under $CH$. For $\mathfra
 
 \section{A model for $\text{cov}(\mathcal{SN}) < \text{add}(\mathcal{M}_\kappa)$}
 
-In this section we first generalize the Galvin–Mycielski–Solovay Theorem to $\kappa$ inaccessible. Then we shall assume that $\kappa$ is strongly unfoldable, and want to construct a model for $\text{cov}(\mathcal{SN}) < \text{add}(\mathcal{M}_\kappa)$. Indeed this will hold in the $\kappa$-Hechler model.
+In this section we first generalize the Galvin–Mycielski–Solovay theorem to $\kappa$ inaccessible. Then we shall assume that $\kappa$ is strongly unfoldable, and want to construct a model for $\text{cov}(\mathcal{SN}) < \text{add}(\mathcal{M}_\kappa)$. Indeed this will hold in the $\kappa$-Hechler model.
 
 \begin{definition}
 Let $X \subset 2^\kappa$. We say that $X$ is meager-shiftable iff $\forall D \subset 2^\kappa$, $D= \bigcap_{i<\kappa} D_i$ for some $(D_i)_{i<\kappa}$ open dense, there exists $y \in 2^\kappa$ such that $X + y \subset D$.
@@ -455,10 +455,10 @@ Suppose that $\{\mathcal{D}_\alpha \colon \alpha < \kappa^+\}$ is a good family 
 \end{lemma}
 
 \begin{proof}
-Towards a contradiction assume that there are names $\dot{x}$, $\dot{X}$ and a condition $p$ such that $p \Vdash_{\mathcal{P}} \dot{x} \in 2^\kappa \land \dot{X} \in [\kappa^+]^{\kappa^+} \land \dot{x} \notin \bigcup_{\alpha \in \dot{X}} \bigcap \mathcal{D}_\alpha$.  Working in $V$, for every $\alpha < \kappa^+$ find $\eta_\alpha > \alpha$, $D_\alpha \in \mathcal{D}_{\eta_\alpha}$ and conditions $p_\alpha \leq p$ such that $p_\alpha \Vdash_{\mathcal{P}} \eta_\alpha \in \dot{X} \land \dot{x} \notin D_\alpha$. Because $\mathcal{P}$ has precaliber $\kappa^+$ we can find $A \in [\kappa^+]^{\kappa^+}$ such that $\{p_\alpha \colon \alpha \in A\}$ is $\text{centered}_{<\kappa}$. Let $Z \subset A$ be of size $<\kappa$ and let $q_Z$ be a lower bound of $\{p_\alpha \colon \alpha \in Z\}$. Then $q_Z \Vdash_{\mathcal{P}} \bigcup_{\alpha \in Z} D_\alpha \neq 2^\kappa$. By $\Pi_1^1$-absoluteness \footnote{Note that this guarantees that if $\mathbf{B}_1, \mathbf{B}_2 \in V$ are $\kappa$-Borel codes, then $V \vDash \mathbf{B}_1 =\mathbf{B}_2$ iff $V^{\mathcal{P}} \vDash \mathbf{B}_1 =\mathbf{B}_2$.} for ${<}\kappa$-closed forcing extensions (see \citep{Friedman}) $\bigcup_{\alpha \in Z} D_\alpha \neq 2^\kappa$ must hold in $V$. Since $\kappa$ is weakly compact it follows that $\bigcup_{\alpha \in A} D_\alpha \neq 2^\kappa$. Hence $\bigcup_{\beta \in \{ \eta_\alpha \colon \alpha \in A\}} \bigcap \mathcal{D}_\beta \neq 2^\kappa$. However, this is a contradiction to $\{\mathcal{D}_\alpha \colon \alpha < \kappa^+\}$ being a good family in $V$.
+Towards a contradiction assume that there are names $\dot{x}$, $\dot{X}$ and a condition $p$ such that $p \Vdash_{\mathcal{P}} \dot{x} \in 2^\kappa \land \dot{X} \in [\kappa^+]^{\kappa^+} \land \dot{x} \notin \bigcup_{\alpha \in \dot{X}} \bigcap \mathcal{D}_\alpha$.  Working in $V$, for every $\alpha < \kappa^+$ find $\eta_\alpha > \alpha$, $D_\alpha \in \mathcal{D}_{\eta_\alpha}$ and conditions $p_\alpha \leq p$ such that $p_\alpha \Vdash_{\mathcal{P}} \eta_\alpha \in \dot{X} \land \dot{x} \notin D_\alpha$. Because $\mathcal{P}$ has precaliber $\kappa^+$ we can find $A \in [\kappa^+]^{\kappa^+}$ such that $\{p_\alpha \colon \alpha \in A\}$ is $\text{centered}_{<\kappa}$. Let $Z \subset A$ be of size $<\kappa$ and let $q_Z$ be a lower bound of $\{p_\alpha \colon \alpha \in Z\}$. Then $q_Z \Vdash_{\mathcal{P}} \bigcup_{\alpha \in Z} D_\alpha \neq 2^\kappa$. By $\Pi_1^1$-absoluteness \footnote{This also guarantees that if $\mathbf{B}_1, \mathbf{B}_2 \in V$ are $\kappa$-Borel codes, then $V \vDash \mathbf{B}_1 =\mathbf{B}_2$ iff $V^{\mathcal{P}} \vDash \mathbf{B}_1 =\mathbf{B}_2$.} for ${<}\kappa$-closed forcing extensions (see \cite{Friedman}) $\bigcup_{\alpha \in Z} D_\alpha \neq 2^\kappa$ must hold in $V$. Since $\kappa$ is weakly compact it follows that $\bigcup_{\alpha \in A} D_\alpha \neq 2^\kappa$. Hence $\bigcup_{\beta \in \{ \eta_\alpha \colon \alpha \in A\}} \bigcap \mathcal{D}_\beta \neq 2^\kappa$. However, this is a contradiction to $\{\mathcal{D}_\alpha \colon \alpha < \kappa^+\}$ being a good family in $V$.
 \end{proof}
 
-We are now ready to prove the main Theorem of this section:
+We are now ready to prove the main theorem of this section:
 
 \begin{theorem}
 Let $V$ satisfy $\vert 2^\kappa\vert =\kappa^+$ and the strong unfoldability of $\kappa$ is indestructible by ${<}\kappa$-closed, $\kappa^+$-c.c. forcing notions (see \cite{Johnstone}). Define $\mathbb{P}$ to be a ${<}\kappa$-support iteration of $\kappa$-Hechler forcing of length $\kappa^{++}$. Then $V^{\mathbb{P}} \vDash \text{cov}(\mathcal{SN})= \kappa^+ <\text{add}(\mathcal{M}_\kappa)=\kappa^{++}$.
